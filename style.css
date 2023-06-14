@@ -1,0 +1,104 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    background-color: rgb(215, 182, 120);
+  }
+  
+  .typewriter {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    display: inline-block;
+  }
+  
+  .typewriter-text {
+    
+    padding-left: 1em;
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 3s steps(30, end), blink 1s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid darkolivegreen;
+    box-sizing: border-box;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0%
+    }
+  
+    to {
+      width: 30%
+    }
+  }
+  
+  @keyframes blink {
+  
+    from,
+    to {
+      border-color: transparent
+    }
+  
+    50% {
+      border-color: darkolivegreen;
+    }
+  }
+  .typist{
+    color: brown;
+  }
+  p{
+    padding-left: 2em;
+  }
+  .intro{
+    font-size: 30px;
+  }
+  .cont{
+    font-size: 22px;
+    max-width: 40%;
+    text-align: justify;
+    padding-bottom: 50px;
+  }
+  @keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+img{
+    padding-left: 5em;
+}
